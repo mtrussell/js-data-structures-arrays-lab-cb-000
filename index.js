@@ -24,6 +24,9 @@ function appendDriver(name){
 }
 
 function prependDriver(name){
+  const copyOfDrivers = drivers.slice();
+  copyOfDrivers.unshift(name);
+  return copyOfDrivers;
 }
 
 function removeLastDriver(){
